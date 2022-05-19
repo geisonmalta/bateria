@@ -1,6 +1,6 @@
 //Representa o corpo do site. O eventListener fica escutando eperando algo acontecer.
 //O evento esperado é o keyup (significa quando aperta uma tecla e solva
-document.body.addEventListener('keyup', (event)=>{ )
+document.body.addEventListener('keyup', (event)=>{ 
    //quando clica em uma tecla executa a função playSound para tocar o som
 playSound( event.code.toLowerCase());
 }); //represnta todo o corpo do site
@@ -8,7 +8,7 @@ playSound( event.code.toLowerCase());
 // fica observando o botão e quando alguém clica faz a execução
 document.querySelector('.composer button').addEventListener('click', () =>{
    //variavel song criada. Pega o id input e registra os dados
-   let song = document.querySelector('#input').value;
+   let song = document.querySelector('#input').value; //o value é pra pegar o que o usuário digitou
    
    if (song !== '') { // se song é diferente de vazio
       let songArray = song.split(''); // transforme em um array
